@@ -1,0 +1,77 @@
+/* Global styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+
+/* Hover effect */
+.cell:hover {
+    background-color: #eee;
+}
+
+/* Mark styles for X and O */
+.cell.x {
+    color: #ff6347; /* Red color for X */
+}
+
+.cell.circle {
+    color: #1e90ff; /* Blue color for O */
+}
+
+.message {
+    margin-top: 20px;
+}
+
+#winner-message {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#restart {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#restart:hover {
+    background-color: #555;
+}
